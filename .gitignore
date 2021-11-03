@@ -1,0 +1,11 @@
+Assets/AmplifyShaderEditor*
+Library
+Logs
+obj
+Temp
+UserSettings
+Assembly-CSharp*
+.vsconfig
+Unity.RenderPipeline*
+Custom-URP*
+.vs
