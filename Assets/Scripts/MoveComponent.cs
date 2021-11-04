@@ -117,7 +117,6 @@ public class MoveComponent : MonoBehaviour
             if (Physics.CapsuleCast(GetCapsuleBottomHemisphere(), GetCapsuleTopHemisphere(), m_Controller.radius, Vector3.down, out RaycastHit hitInfo, chosenGroundCheckDistance, groundCheckLayers, QueryTriggerInteraction.Ignore)) {
 
                 m_GroundNormal = hitInfo.normal;
-
                 //只有方向相同才是有效的命中地板
                 if (Vector3.Dot(hitInfo.normal, transform.up) > 0f && isNormalUnderSlopeLimit(m_GroundNormal))
                 {

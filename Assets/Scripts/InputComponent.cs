@@ -39,6 +39,7 @@ public class InputComponent : MonoBehaviour
     public string k_ButtonNameSubmit = "Submit";
     public string k_ButtonNameCancel = "Cancel";
     public string k_ButtonNameOver = "Over";
+    public string k_ButtonNameT = "T";
 
     #endregion
 
@@ -102,6 +103,16 @@ public class InputComponent : MonoBehaviour
         {
             return Input.GetButton(k_ButtonNameJump);
         }
+        return false;
+    }
+
+    public bool GetTInputDown()
+    {
+        if (CanInput())
+        {
+            return Input.GetButton(k_ButtonNameT);
+        }
+
         return false;
     }
 
